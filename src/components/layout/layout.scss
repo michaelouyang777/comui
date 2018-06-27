@@ -1,0 +1,195 @@
+/* 基本布局 */
+.comui-main{position: relative; width: 1140px; margin: 0 auto;}
+.comui-header{position: relative; z-index: 1000; height: 60px;}
+.comui-header a:hover{transition: all .5s; -webkit-transition: all .5s;}
+.comui-side{position: fixed; left: 0; top: 0; bottom: 0; z-index: 999; width: 200px; overflow-x: hidden;}
+.comui-side-scroll{position: relative; width: 220px; height: 100%; overflow-x: hidden;}
+.comui-body{position: absolute; left: 200px; right: 0; top: 0; bottom: 0; z-index: 998; width: auto; overflow: hidden; overflow-y: auto; box-sizing: border-box;}
+
+/* 后台框架大布局 */.comui-layout-body{overflow: hidden;}
+.comui-layout-admin .comui-header{background-color: #23262E;}
+.comui-layout-admin .comui-side{top: 60px; width: 200px; overflow-x: hidden;}
+.comui-layout-admin .comui-body{top: 60px; bottom: 44px;}
+.comui-layout-admin .comui-main{width: auto; margin: 0 15px;}
+.comui-layout-admin .comui-footer{position: fixed; left: 200px; right: 0; bottom: 0; height: 44px; line-height: 44px; padding: 0 15px; background-color: #eee;}
+.comui-layout-admin .comui-logo{position: absolute; left: 0; top: 0; width: 200px; height: 100%; line-height: 60px; text-align: center; color: #009688; font-size: 16px;}
+.comui-layout-admin .comui-header .comui-nav{background: none;}
+.comui-layout-left{position: absolute !important; left: 200px; top: 0;}
+.comui-layout-right{position: absolute !important; right: 0; top: 0;}
+
+/* 栅格布局 */
+.comui-container{position: relative; margin: 0 auto; padding: 0 15px; box-sizing: border-box;}
+.comui-fluid{position: relative; margin: 0 auto; padding: 0 15px;}
+
+.comui-row:before, .comui-row:after{content: ''; display: block; clear: both;}
+.comui-col-xs1, .comui-col-xs2, .comui-col-xs3, .comui-col-xs4, .comui-col-xs5, .comui-col-xs6, .comui-col-xs7, .comui-col-xs8, .comui-col-xs9, .comui-col-xs10, .comui-col-xs11, .comui-col-xs12
+,.comui-col-sm1, .comui-col-sm2, .comui-col-sm3, .comui-col-sm4, .comui-col-sm5, .comui-col-sm6, .comui-col-sm7, .comui-col-sm8, .comui-col-sm9, .comui-col-sm10, .comui-col-sm11, .comui-col-sm12
+,.comui-col-md1, .comui-col-md2, .comui-col-md3, .comui-col-md4, .comui-col-md5, .comui-col-md6, .comui-col-md7, .comui-col-md8, .comui-col-md9, .comui-col-md10, .comui-col-md11, .comui-col-md12
+,.comui-col-lg1, .comui-col-lg2, .comui-col-lg3, .comui-col-lg4, .comui-col-lg5, .comui-col-lg6, .comui-col-lg7, .comui-col-lg8, .comui-col-lg9, .comui-col-lg10, .comui-col-lg11, .comui-col-lg12
+{position: relative; display: block; box-sizing: border-box;}
+
+.comui-col-xs1, .comui-col-xs2, .comui-col-xs3, .comui-col-xs4, .comui-col-xs5, .comui-col-xs6, .comui-col-xs7, .comui-col-xs8, .comui-col-xs9, .comui-col-xs10, .comui-col-xs11, .comui-col-xs12{float: left;}
+.comui-col-xs1{width: 8.33333333%;}
+.comui-col-xs2{width: 16.66666667%;}
+.comui-col-xs3{width: 25%;}
+.comui-col-xs4{width: 33.33333333%;}
+.comui-col-xs5{width: 41.66666667%;}
+.comui-col-xs6{width: 50%;}
+.comui-col-xs7{width: 58.33333333%;}
+.comui-col-xs8{width: 66.66666667%;}
+.comui-col-xs9{width: 75%;}
+.comui-col-xs10{width: 83.33333333%;}
+.comui-col-xs11{width: 91.66666667%;}
+.comui-col-xs12{width: 100%;}
+
+.comui-col-xs-offset1{margin-left: 8.33333333%;}
+.comui-col-xs-offset2{margin-left: 16.66666667%;}
+.comui-col-xs-offset3{margin-left: 25%;}
+.comui-col-xs-offset4{margin-left: 33.33333333%;}
+.comui-col-xs-offset5{margin-left: 41.66666667%;}
+.comui-col-xs-offset6{margin-left: 50%;}
+.comui-col-xs-offset7{margin-left: 58.33333333%;}
+.comui-col-xs-offset8{margin-left: 66.66666667%;}
+.comui-col-xs-offset9{margin-left: 75%;}
+.comui-col-xs-offset10{margin-left: 83.33333333%;}
+.comui-col-xs-offset11{margin-left: 91.66666667%;}
+.comui-col-xs-offset12{margin-left: 100%;}
+
+/* 超小屏幕(手机) */
+@media screen and (max-width: 768px) {
+  .comui-hide-xs{display: none!important;}
+  .comui-show-xs-block{display: block!important;}
+  .comui-show-xs-inline{display: inline!important;}
+  .comui-show-xs-inline-block{display: inline-block!important;}
+}
+
+/* 小型屏幕(平板) */
+@media screen and (min-width: 768px) {
+  .comui-container{width: 750px;}
+  .comui-hide-sm{display: none!important;}
+  .comui-show-sm-block{display: block!important;}
+  .comui-show-sm-inline{display: inline!important;}
+  .comui-show-sm-inline-block{display: inline-block!important;}
+
+  .comui-col-sm1, .comui-col-sm2, .comui-col-sm3, .comui-col-sm4, .comui-col-sm5, .comui-col-sm6, .comui-col-sm7, .comui-col-sm8, .comui-col-sm9, .comui-col-sm10, .comui-col-sm11, .comui-col-sm12{float: left;}
+  .comui-col-sm1{width: 8.33333333%;}
+  .comui-col-sm2{width: 16.66666667%;}
+  .comui-col-sm3{width: 25%;}
+  .comui-col-sm4{width: 33.33333333%;}
+  .comui-col-sm5{width: 41.66666667%;}
+  .comui-col-sm6{width: 50%;}
+  .comui-col-sm7{width: 58.33333333%;}
+  .comui-col-sm8{width: 66.66666667%;}
+  .comui-col-sm9{width: 75%;}
+  .comui-col-sm10{width: 83.33333333%;}
+  .comui-col-sm11{width: 91.66666667%;}
+  .comui-col-sm12{width: 100%;}
+  /* 列偏移 */
+  .comui-col-sm-offset1{margin-left: 8.33333333%;}
+  .comui-col-sm-offset2{margin-left: 16.66666667%;}
+  .comui-col-sm-offset3{margin-left: 25%;}
+  .comui-col-sm-offset4{margin-left: 33.33333333%;}
+  .comui-col-sm-offset5{margin-left: 41.66666667%;}
+  .comui-col-sm-offset6{margin-left: 50%;}
+  .comui-col-sm-offset7{margin-left: 58.33333333%;}
+  .comui-col-sm-offset8{margin-left: 66.66666667%;}
+  .comui-col-sm-offset9{margin-left: 75%;}
+  .comui-col-sm-offset10{margin-left: 83.33333333%;}
+  .comui-col-sm-offset11{margin-left: 91.66666667%;}
+  .comui-col-sm-offset12{margin-left: 100%;}
+}
+/* 中型屏幕(桌面) */
+@media screen and (min-width: 992px) {
+  .comui-container{width: 970px;}
+  .comui-hide-md{display: none!important;}
+  .comui-show-md-block{display: block!important;}
+  .comui-show-md-inline{display: inline!important;}
+  .comui-show-md-inline-block{display: inline-block!important;}
+  
+  .comui-col-md1, .comui-col-md2, .comui-col-md3, .comui-col-md4, .comui-col-md5, .comui-col-md6, .comui-col-md7, .comui-col-md8, .comui-col-md9, .comui-col-md10, .comui-col-md11, .comui-col-md12{float: left;}
+  .comui-col-md1{width: 8.33333333%;}
+  .comui-col-md2{width: 16.66666667%;}
+  .comui-col-md3{width: 25%;}
+  .comui-col-md4{width: 33.33333333%;}
+  .comui-col-md5{width: 41.66666667%;}
+  .comui-col-md6{width: 50%;}
+  .comui-col-md7{width: 58.33333333%;}
+  .comui-col-md8{width: 66.66666667%;}
+  .comui-col-md9{width: 75%;}
+  .comui-col-md10{width: 83.33333333%;}
+  .comui-col-md11{width: 91.66666667%;}
+  .comui-col-md12{width: 100%;}
+  /* 列偏移 */
+  .comui-col-md-offset1{margin-left: 8.33333333%;}
+  .comui-col-md-offset2{margin-left: 16.66666667%;}
+  .comui-col-md-offset3{margin-left: 25%;}
+  .comui-col-md-offset4{margin-left: 33.33333333%;}
+  .comui-col-md-offset5{margin-left: 41.66666667%;}
+  .comui-col-md-offset6{margin-left: 50%;}
+  .comui-col-md-offset7{margin-left: 58.33333333%;}
+  .comui-col-md-offset8{margin-left: 66.66666667%;}
+  .comui-col-md-offset9{margin-left: 75%;}
+  .comui-col-md-offset10{margin-left: 83.33333333%;}
+  .comui-col-md-offset11{margin-left: 91.66666667%;}
+  .comui-col-md-offset12{margin-left: 100%;}
+}
+/* 大型屏幕(桌面) */
+@media screen and (min-width: 1200px) {
+  .comui-container{width: 1170px;}
+  .comui-hide-lg{display: none!important;}
+  .comui-show-lg-block{display: block!important;}
+  .comui-show-lg-inline{display: inline!important;}
+  .comui-show-lg-inline-block{display: inline-block!important;}
+  
+  .comui-col-lg1, .comui-col-lg2, .comui-col-lg3, .comui-col-lg4, .comui-col-lg5, .comui-col-lg6, .comui-col-lg7, .comui-col-lg8, .comui-col-lg9, .comui-col-lg10, .comui-col-lg11, .comui-col-lg12{float: left;}
+  .comui-col-lg1{width: 8.33333333%;}
+  .comui-col-lg2{width: 16.66666667%;}
+  .comui-col-lg3{width: 25%;}
+  .comui-col-lg4{width: 33.33333333%;}
+  .comui-col-lg5{width: 41.66666667%;}
+  .comui-col-lg6{width: 50%;}
+  .comui-col-lg7{width: 58.33333333%;}
+  .comui-col-lg8{width: 66.66666667%;}
+  .comui-col-lg9{width: 75%;}
+  .comui-col-lg10{width: 83.33333333%;}
+  .comui-col-lg11{width: 91.66666667%;}
+  .comui-col-lg12{width: 100%;}
+  /* 列偏移 */
+  .comui-col-lg-offset1{margin-left: 8.33333333%;}
+  .comui-col-lg-offset2{margin-left: 16.66666667%;}
+  .comui-col-lg-offset3{margin-left: 25%;}
+  .comui-col-lg-offset4{margin-left: 33.33333333%;}
+  .comui-col-lg-offset5{margin-left: 41.66666667%;}
+  .comui-col-lg-offset6{margin-left: 50%;}
+  .comui-col-lg-offset7{margin-left: 58.33333333%;}
+  .comui-col-lg-offset8{margin-left: 66.66666667%;}
+  .comui-col-lg-offset9{margin-left: 75%;}
+  .comui-col-lg-offset10{margin-left: 83.33333333%;}
+  .comui-col-lg-offset11{margin-left: 91.66666667%;}
+  .comui-col-lg-offset12{margin-left: 100%;}
+}
+
+/* 列间隔 */.comui-col-space1{margin: -0.5px;}
+.comui-col-space1>*{padding: 0.5px;}
+.comui-col-space3{margin: -1.5px;}
+.comui-col-space3>*{padding: 1.5px;}
+.comui-col-space5{margin: -2.5px;}
+.comui-col-space5>*{padding: 2.5px;}
+.comui-col-space8{margin: -3.5px;}
+.comui-col-space8>*{padding: 3.5px;}
+.comui-col-space10{margin: -5px;}
+.comui-col-space10>*{padding: 5px;}
+.comui-col-space12{margin: -6px;}
+.comui-col-space12>*{padding: 6px;}
+.comui-col-space15{margin: -7.5px;}
+.comui-col-space15>*{padding: 7.5px;}
+.comui-col-space18{margin: -9px;}
+.comui-col-space18>*{padding: 9px;}
+.comui-col-space20{margin: -10px;}
+.comui-col-space20>*{padding: 10px;}
+.comui-col-space22{margin: -11px;}
+.comui-col-space22>*{padding: 11px;}
+.comui-col-space25{margin: -12.5px;}
+.comui-col-space25>*{padding: 12.5px;}
+.comui-col-space30{margin: -15px;}
+.comui-col-space30>*{padding: 15px;}

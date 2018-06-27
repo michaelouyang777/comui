@@ -1,0 +1,185 @@
+/* 按钮 */
+//a.btn{
+//  display: inline-block;
+//  margin: 0 16px;
+//  height: 24px;
+//  line-height: 24px;
+//  font-size: 13px;
+//  vertical-align: top;
+//  color: #fff;
+//  position: relative;
+//}
+//
+//a.btn:before,
+//a.btn:after{
+//  content: '';
+//  display: block;
+//  height: 24px;
+//  width: 10px;
+//  position: absolute;
+//  top: 0;
+//}
+//a.btn:before{ left: -10px;}
+//a.btn:after{ right:-10px;}
+//
+//a.btn-blue{ background: url(images/btn_blue.png) repeat-x 0 -24px; }
+//a.btn-blue:before{ background: url(images/btn_blue.png) repeat-x 0 0; }
+//a.btn-blue:after{ background: url(images/btn_blue.png) repeat-x 0 -48px; }
+//
+//a.btn-green{ background: url(images/btn_green.png) repeat-x 0 -24px; }
+//a.btn-green:before{ background: url(images/btn_green.png) repeat-x 0 0; }
+//a.btn-green:after{ background: url(images/btn_green.png) repeat-x 0 -48px; }
+//
+//a.btn-l-green{ background: url(images/btn_light_green.png) repeat-x 0 -24px; }
+//a.btn-l-green:before{ background: url(images/btn_light_green.png) repeat-x 0 0; }
+//a.btn-l-green:after{ background: url(images/btn_light_green.png) repeat-x 0 -48px; }
+//
+//a.btn-orange{ background: url(images/btn_orange.png) repeat-x 0 -24px; }
+//a.btn-orange:before{ background: url(images/btn_orange.png) repeat-x 0 0; }
+//a.btn-orange:after{ background: url(images/btn_orange.png) repeat-x 0 -48px; }
+//
+//a.btn-l-orange{ background: url(images/btn_ligth_orange.png) repeat-x 0 -24px; }
+//a.btn-l-orange:before{ background: url(images/btn_ligth_orange.png) repeat-x 0 0; }
+//a.btn-l-orange:after{ background: url(images/btn_ligth_orange.png) repeat-x 0 -48px; }
+//
+//a.btn-l-black{ background: url(images/btn_light_black.png) repeat-x 0 -24px; }
+//a.btn-l-black:before{ background: url(images/btn_light_black.png) repeat-x 0 0; }
+//a.btn-l-black:after{ background: url(images/btn_light_black.png) repeat-x 0 -48px; }
+//
+
+
+
+
+/*
+
+  按钮 
+
+*/
+/* 默认色 */
+$bg-color-default: #009688;
+/* 百搭 */
+$bg-color-normal: #1E9FFF;
+/* 暖色 */
+$bg-color-warm: #FFB800;
+/* 警告 */
+$bg-color-danger: #FF5722;
+/* 禁用 */
+$bg-color-disabled: #FBFBFB;
+/* 自定义亮蓝色 */
+$bg-color-light-blue: #3e81f1;
+/* 自定义亮蓝色中空 */
+$bg-color-light-blue-empty: #fff;
+$color-light-blue-empty: #3B4D60;
+$b-color-light-blue-empty: #D1DBE4;
+$bg-color-light-blue-empty-active: #e2ecff;
+$color-light-blue-empty-active: #4684ec;
+$b-color-light-blue-empty-active: #3E80ED;
+/* 自定义深灰色 */
+$bg-color-dark: #252c31;
+$color-dark: #989fa7;
+$b-color-dark: #1e2428;
+$bg-color-dark-active: #252c31;
+$color-dark-active: #057ed9;
+$b-color-dark-active: #1c2126;
+
+.comui-btn {
+    display: inline-block;
+    vertical-align: middle;
+    height: 38px;
+    line-height: 38px;
+    padding: 0 18px;
+    background-color: $bg-color-default;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.comui-btn:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    color: #fff;
+}
+.comui-btn:active {
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+.comui-btn+.comui-btn {
+    margin-left: 10px;
+}
+
+/* 
+ * 风格 
+ */
+/* 原始 */
+.comui-btn-primary{border: 1px solid #C9C9C9; background-color: #fff; color: #555;}
+.comui-btn-primary:hover{border-color: $bg-color-default; color: #333}
+/* 百搭 */
+.comui-btn-normal{background-color: $bg-color-normal;}
+/* 暖色 */
+.comui-btn-warm{background-color: $bg-color-warm;}
+/* 警告 */
+.comui-btn-danger{background-color: $bg-color-danger;}
+/* 禁用 */
+.comui-btn-disabled,.comui-btn-disabled:hover,.comui-btn-disabled:active{border: 1px solid #e6e6e6; background-color: $bg-color-disabled; color: #C9C9C9; cursor: not-allowed; opacity: 1;}
+/* 自定义亮蓝色 */
+.comui-btn-light-blue{background-color: $bg-color-light-blue;}
+/* 自定义亮蓝色中空 */
+.comui-btn-light-blue-empty{border: 1px solid $b-color-light-blue-empty; color: $color-light-blue-empty; background: $bg-color-light-blue-empty; }
+.comui-btn-light-blue-empty:hover,.comui-btn-light-blue-empty.active{color: $color-light-blue-empty-active; background-color: $bg-color-light-blue-empty-active; border: 1px solid $b-color-light-blue-empty-active;}
+/* 自定义深灰色 */
+.comui-btn-dark{border: 1px solid $b-color-dark; color: $color-dark; background: $bg-color-dark; }
+.comui-btn-dark:hover,.comui-btn-dark.active{color: $color-dark-active; background-color: $bg-color-dark-active; border: 1px solid $b-color-dark-active;}
+
+
+/* 图标 */
+.comui-btn .comui-icon{margin-right: 3px; font-size: 18px; vertical-align: bottom; vertical-align: middle\0;}
+
+/* 圆角 */
+.comui-btn-radius{border-radius: 100px;}
+
+/* 按钮容器 */
+.comui-btn-container{font-size: 0;}
+.comui-btn-container .comui-btn{margin-right: 10px; margin-bottom: 10px;}
+.comui-btn-container .comui-btn+.comui-btn{margin-left: 0;}
+.comui-table .comui-btn-container .comui-btn{margin-bottom: 9px;}
+
+/* 
+ * 规格 
+ */
+/* 大型 */
+.comui-btn-lg{height: 44px; line-height: 44px; padding: 0 25px; font-size: 16px;}
+/* 小型 */
+.comui-btn-sm{height: 30px; line-height: 30px; padding: 0 10px; font-size: 12px;}
+.comui-btn-sm i{font-size: 16px !important;}
+/* 超小 */
+.comui-btn-xs{height: 22px; line-height: 22px; padding: 0 5px; font-size: 12px;}
+.comui-btn-xs i{font-size: 14px !important;}
+/* 一般大小 */
+.comui-btn-m{height: 28px; line-height: 28px; padding: 0 22px; font-size: 12px;}
+.comui-btn-m i{font-size: 16px !important;}
+
+
+/* 按钮组 */
+.comui-btn-group{display: inline-block; vertical-align: middle; font-size: 0;}
+.comui-btn-group .comui-btn{margin-left: 0!important; margin-right: 0!important; border-left: 1px solid rgba(255,255,255,.5); border-radius: 0;}
+.comui-btn-group .comui-btn:first-child{border-left: none; border-radius: 2px 0 0 2px;}
+.comui-btn-group .comui-btn:last-child{border-radius: 0 2px 2px 0;}
+.comui-btn-group .comui-btn+.comui-btn{margin-left: 0;}
+.comui-btn-group+.comui-btn-group{margin-left: 10px;}
+/* 按钮组-原始 */
+.comui-btn-group .comui-btn-primary{border-left: none;}
+.comui-btn-group .comui-btn-primary:hover{border-color: #C9C9C9; color: $bg-color-default;}
+.comui-btn-group .comui-btn-primary:first-child{border-left: 1px solid #c9c9c9;}
+/* 按钮组-自定义亮蓝色中空 */
+.comui-btn-group .comui-btn-light-blue-empty{border-left: none;}
+.comui-btn-group .comui-btn-light-blue-empty:hover{border-color: $b-color-light-blue-empty; color: $color-light-blue-empty-active;}
+.comui-btn-group .comui-btn-light-blue-empty:first-child{border-left: 1px solid $b-color-light-blue-empty;}
+
+/* 流体 */
+.comui-btn-fluid{width: 100%;}

@@ -1,0 +1,76 @@
+/* 暗色调 */
+$bg-color-dark: #1a1d21;
+$bg-color-gloomy: #1e2428;
+$color-blue: #057ed9;
+$color-white: #fff;
+/*
+  面板
+ */
+/* 折叠面板 */
+.comui-collapse{border-width: 1px; border-style: solid; border-radius: 2px;}
+.comui-colla-item,
+.comui-colla-content{border-top-width: 1px; border-top-style: solid;}
+.comui-colla-item:first-child{border-top: none;}
+.comui-colla-title{position: relative; height: 42px; line-height: 42px; padding: 0 15px 0 35px; color: #333; background-color: #f2f2f2; cursor: pointer; font-size: 14px; overflow: hidden;}
+.comui-colla-content{display: none; padding: 10px 15px; line-height: 22px; color: #666;}
+.comui-colla-icon{position: absolute; left: 15px; top: 0; font-size: 14px;}
+
+/* 卡片面板 */
+.comui-card {
+    height: 100%;
+    margin-bottom: 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .1);
+}
+.comui-card:last-child{margin-bottom: 0;}
+.comui-card-header{position: relative; height: 42px; line-height: 42px; padding: 0 15px; border-bottom: 1px solid #f6f6f6; color: #333; border-radius: 2px 2px 0 0; font-size: 16px;}
+.comui-card-body{position: relative; padding: 0px 15px; line-height: 24px;}
+.comui-card-body[pad15]{padding: 15px;}
+.comui-card-body[pad20]{padding: 20px;}
+.comui-card-body .comui-table{margin: 5px 0;}
+.comui-card .comui-tab{margin: 0;}
+
+/* 常规面板 */
+.comui-panel{}
+
+/* 窗口面板 */
+.comui-panel-window{position: relative; padding: 15px; border-radius: 0; border-top: 5px solid #E6E6E6; background-color: #fff;}
+
+.comui-body {
+    position: absolute;
+    left: 200px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 998;
+    width: auto;
+    overflow: hidden;
+    overflow-y: auto;
+    box-sizing: border-box
+}
+
+/* 窗口面板 */
+.comui-admin-window{
+    margin: 0 auto!important;
+    padding: 7.5px!important;
+    background: #EEF1F6;
+}
+/* 卡片面板外层 */
+.comui-card-window{
+    padding: 7.5px;
+    height: 100%;
+    overflow: hidden;
+}
+/* 卡片面板内容遮盖 */
+.comui-card-hidden{
+    height:100%;
+}
+
+/* 暗色调 */
+.comui-bg-dark{background: $bg-color-dark !important;}
+.comui-bg-dark .comui-card{ background: $bg-color-gloomy}
+.comui-bg-dark .comui-card .comui-card-header{border-bottom: 1px solid $bg-color-gloomy; color:#fff; }
+.comui-bg-dark .comui-card .comui-text-blue{color: $color-blue;}
+.comui-bg-dark .comui-card .comui-text-white{color: $color-white;}
