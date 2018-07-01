@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>三级菜单</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+	</head>
+	<body>
+		<div class="header">
+			<ul class="nav">
+				<!-- 一级菜单 -->
+				<li>
+					<a href=" #">当季爆款</a>
+					<!-- 二级菜单 -->
+					<ul class="second-nav">
+						<li>
+							<a href=" #">两件套<span class="sf-sub-indicator">></span></a>
+							<!-- 三级菜单 -->
+							<ul class="third-nav">
+								<li>
+									<a href=" #2">T恤+短裤</a>
+								</li>
+								<li>
+									<a href=" #3">T恤+短裙</a>
+								</li>
+								<li>
+									<a href=" #a">T恤+碎花裙</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=" #">碎花裙</a>
+							<!--<ul class="third-nav">
+								<li>
+									<a href=" #">荷叶裙</a>
+								</li>
+								<li>
+									<a href=" #">仙女裙</a>
+								</li>
+							</ul>-->
+						</li>
+						<li>
+							<a href=" #">背带裤</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href=" #">当季新品</a>
+					<ul class="second-nav">
+						<li>
+							<a href=" #">两件套</a>
+						</li>
+						<li>
+							<a href=" #">碎花裙</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href=" #">最新排行</a>
+					<ul class="second-nav">
+						<li>
+							<a href=" #">碎花裙</a>
+							<ul class="third-nav">
+								<li>
+									<a href=" #">仙女裙</a>
+								</li>
+								<li>
+									<a href=" #">荷叶裙</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=" #">阔腿裤</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href=" #">春季爆款</a>
+					<ul class="second-nav">
+						<li>
+							<a href=" #">棒球服</a>
+						</li>
+						<li>
+							<a href=" #">小皮衣</a>
+						</li>
+						<li>
+							<a href=" #">小风衣</a>
+						</li>
+						<li>
+							<a href=" #">小披肩</a>
+						</li>
+						<li>
+							<a href=" #">小风衣</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href=" #">夏季爆款</a>
+					<ul class="second-nav">
+						<li>
+							<a href=" #">两件套</a>
+							<ul class="third-nav">
+								<li>
+									<a href=" #">T恤+短裤</a>
+								</li>
+								<li>
+									<a href=" #">T恤+短裙</a>
+								</li>
+								<li>
+									<a href=" #">T恤+碎花裙</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=" #">背带裤</a>
+						</li>
+						<li>
+							<a href=" #">碎花裙</a>
+							<ul class="third-nav">
+								<li>
+									<a href=" #">荷叶裙</a>
+								</li>
+								<li>
+									<a href=" #">仙女裙</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href=" #">秋季爆款</a>
+					<ul class="second-nav">
+						<li>
+							<a href=" #">碎花裙</a>
+							<ul class="third-nav">
+								<li>
+									<a href=" #">仙女裙</a>
+								</li>
+								<li>
+									<a href=" #">荷叶裙</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href=" #">阔腿裤</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			navHover();
+		});
+		function navHover(){
+			var _this1 = null;
+			// 一级菜单的hover事件
+			$('.nav>li').hover(function() {								// 触发时执行的函数
+				_this1 = $(this);
+				_this1.find('.second-nav').show();
+				var _this2 = null;
+				// 二级菜单的hover事件
+				_this1.find('.second-nav').find('li').hover(function() {// 触发时执行的函数
+					_this2 = $(this);
+					_this2.find('.third-nav').show();
+					// 三级菜单的hover事件
+					_this2.find('.third-nav').hover(function() {		// 触发时执行的函数
+						$(this).show();
+					}, function() {										// 非触发时执行的函数
+						$(this).hide();
+					});
+				}, function() {											// 非触发时执行的函数
+					_this2.find('.third-nav').hide();
+				});
+			}, function() {												// 非触发时执行的函数
+				_this1.find('.second-nav').hide();
+			});
+		}
+	</script>
+</html>

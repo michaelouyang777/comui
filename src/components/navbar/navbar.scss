@@ -1,0 +1,98 @@
+
+/* 主盒子 */
+.comui-navbar{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* 一级菜单 */
+.comui-navbar .comui-nav{
+    padding-left: 0;
+    margin-bottom: 0;
+}
+.comui-navbar .comui-nav li {
+    float: left;
+    /*margin-bottom: -1px;*/
+    /*width:150px;*/
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+.comui-navbar .comui-nav li a {
+    display: block;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    cursor: pointer;
+}
+.comui-navbar .comui-nav>li>a {
+    background: #0061cc;
+    border-radius: 3px 3px 0 0;
+}
+.comui-navbar .second-nav li a {
+    color: #8c8c8c;
+}
+.comui-navbar .comui-nav>li>a:hover:after, .comui-navbar .comui-nav>li>a.active:after{
+    content:"";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    border-bottom : 3px solid #6ab5ff;
+}
+
+/* 二级菜单 */
+.second-nav{
+    width: 140px;
+    display: none;
+    /*z-index: 111;*/
+    position: fixed;
+    /*position: relative;*/
+}
+.second-nav li {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+}
+.comui-nav li .second-nav li:hover>a{
+    background: #2d7cff;
+    color: #fff;
+}
+
+/* 三级菜单 */
+.second-nav li .third-nav{
+    /*position: absolute;*/
+    width: 150px;
+    /*height: 200px;*/
+    display: none;
+    margin-left: 100%;
+    margin-top: -40px;
+}
+
+/* 菜单箭头 */
+.icon-right{
+    position: absolute;
+    top:0;
+    right: 8px;
+    font-style:normal;
+    font-family: SimSun;
+    color: #8c8c8c;
+}
+
+.comui-navbar .comui-nav .line{
+    width: 2px;
+    height: 20px;
+    margin: 10px 0;
+}

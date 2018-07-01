@@ -1,13 +1,10 @@
-import '../css/commond.scss';
-import Button from '../components/button/button.js';
-import Form from '../components/form/form.js';
+import Layer from '../components/layer/layer.js';
+import '../css/reset.scss';
+import '../css/style.scss';
 
-//const App = function(){
-//	var dom = document.getElementById("app");
-//	var form = new Form();
-//	dom.innerHTML = form.tpl;
-//}
-//new App();
-
-new Button();
-new Form();
+const App = function(){
+	var dom = document.getElementById("app");
+	var layer = new Layer();
+	dom.innerHTML = layer.tpl;
+}
+new App();

@@ -10,3 +10,4 @@ import '../components/table/table.scss';
 import '../components/pannel/pannel.scss';
 import '../components/bootstrapbutton/bootstrapbutton.scss';
 import '../components/bootstrapinputgroup/bootstrapinputgroup.scss';
+//import '../components/navbar/navbar.scss';

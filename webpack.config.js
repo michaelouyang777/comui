@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 
 const map = require('./wpconfig/map');
 const ROOT = path.resolve(__dirname);
-const entry = {},
+let entry = {},
 	plugins = [];
 for (chunk in map) {
 	entry[chunk] = map[chunk].src
@@ -78,19 +78,19 @@ module.exports = {
 	            comments:false
 	        }
 	    }),
+		new CleanWebpackPlugin('dist/js/*.*', {
+		    root: __dirname,
+		    verbose: true,
+		    dry: false
+		}),
+		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin("comui.css"),
 		new OptimizeCssAssetsPlugin({
 	    	assetNameRegExp: /\.css$/g,
 	    	cssProcessor: require('cssnano'),
 	    	cssProcessorOptions: { discardComments: { removeAll: true } },
 	    	canPrint: true
-    	}),
-		new CleanWebpackPlugin('dist/js/*.*', {
-		    root: __dirname,
-		    verbose: true,
-		    dry: false
-		}),
-		new webpack.HotModuleReplacementPlugin()
+    	}),	
 	]),
 	devServer: {
         contentBase: path.join(__dirname, "dist"),
@@ -99,6 +99,6 @@ module.exports = {
         hot: true,
         open: true,
         inline: true,
-        port: 8000
+        port: 8001
 	}
 }

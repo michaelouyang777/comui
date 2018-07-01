@@ -69,11 +69,25 @@ $bg-color-disabled: #FBFBFB;
 $bg-color-light-blue: #3e81f1;
 /* 自定义亮蓝色中空 */
 $bg-color-light-blue-empty: #fff;
-$color-light-blue-empty: #3B4D60;
-$b-color-light-blue-empty: #D1DBE4;
+$color-light-blue-empty: #3387E6;
+$b-color-light-blue-empty: #3387E6;
 $bg-color-light-blue-empty-active: #e2ecff;
 $color-light-blue-empty-active: #4684ec;
 $b-color-light-blue-empty-active: #3E80ED;
+/* 自定义灰白中空*/
+$bg-color-gray-lightblue: #fff;
+$color-gray-lightblue: #3B4D60;
+$b-color-gray-lightblue: #D1DBE4;
+$bg-color-gray-lightblue-active: #e2ecff;
+$color-gray-lightblue-active: #4684ec;
+$b-color-gray-lightblue-active: #3E80ED;
+/* 自定义亮蓝色中空白 */
+$bg-color-light-blue-white: #fff;
+$color-light-blue-white: #4b95e8;
+$b-color-light-blue-white: #fff;
+$bg-color-light-blue-white-active: #b4d0ff;
+$color-light-blue-white-active: #4b95e8;
+$b-color-light-blue-white-active: #3E80ED;
 /* 自定义深灰色 */
 $bg-color-dark: #252c31;
 $color-dark: #989fa7;
@@ -132,6 +146,13 @@ $b-color-dark-active: #1c2126;
 /* 自定义亮蓝色中空 */
 .comui-btn-light-blue-empty{border: 1px solid $b-color-light-blue-empty; color: $color-light-blue-empty; background: $bg-color-light-blue-empty; }
 .comui-btn-light-blue-empty:hover,.comui-btn-light-blue-empty.active{color: $color-light-blue-empty-active; background-color: $bg-color-light-blue-empty-active; border: 1px solid $b-color-light-blue-empty-active;}
+
+/* 自定义灰白中空 */
+.comui-btn-gray-lightblue{border: 1px solid $b-color-gray-lightblue; color: $color-gray-lightblue; background: $bg-color-gray-lightblue; }
+.comui-btn-gray-lightblue:hover,.comui-btn-gray-lightblue.active{color: $color-gray-lightblue-active; background-color: $bg-color-gray-lightblue-active; border: 1px solid $b-color-gray-lightblue-active;}
+/* 自定义亮蓝色中空白 */
+.comui-btn-light-blue-white{color: $color-light-blue-white; background: transparent; }
+.comui-btn-light-blue-white:hover,.comui-btn-light-blue-white.active{color: $color-light-blue-white-active; background-color: $bg-color-light-blue-white-active;}
 /* 自定义深灰色 */
 .comui-btn-dark{border: 1px solid $b-color-dark; color: $color-dark; background: $bg-color-dark; }
 .comui-btn-dark:hover,.comui-btn-dark.active{color: $color-dark-active; background-color: $bg-color-dark-active; border: 1px solid $b-color-dark-active;}
@@ -177,9 +198,9 @@ $b-color-dark-active: #1c2126;
 .comui-btn-group .comui-btn-primary:hover{border-color: #C9C9C9; color: $bg-color-default;}
 .comui-btn-group .comui-btn-primary:first-child{border-left: 1px solid #c9c9c9;}
 /* 按钮组-自定义亮蓝色中空 */
-.comui-btn-group .comui-btn-light-blue-empty{border-left: none;}
-.comui-btn-group .comui-btn-light-blue-empty:hover{border-color: $b-color-light-blue-empty; color: $color-light-blue-empty-active;}
-.comui-btn-group .comui-btn-light-blue-empty:first-child{border-left: 1px solid $b-color-light-blue-empty;}
+.comui-btn-group .comui-btn-gray-lightblue{border-left: none;}
+.comui-btn-group .comui-btn-gray-lightblue:hover{border-color: $b-color-gray-lightblue; color: $color-gray-lightblue-active;}
+.comui-btn-group .comui-btn-gray-lightblue:first-child{border-left: 1px solid $b-color-gray-lightblue;}
 
 /* 流体 */
 .comui-btn-fluid{width: 100%;}
