@@ -8,6 +8,7 @@ import '../components/button/button.scss';
 import '../components/form/form.scss';
 import '../components/table/table.scss';
 import '../components/pannel/pannel.scss';
+import '../components/block/block.scss';
 import '../components/bootstrapbutton/bootstrapbutton.scss';
 import '../components/bootstrapinputgroup/bootstrapinputgroup.scss';
 //import '../components/navbar/navbar.scss';

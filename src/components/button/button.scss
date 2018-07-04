@@ -95,6 +95,10 @@ $b-color-dark: #1e2428;
 $bg-color-dark-active: #252c31;
 $color-dark-active: #057ed9;
 $b-color-dark-active: #1c2126;
+/* 自定义灰色 */
+$bg-color-gray: #bfb1b1;
+/* 自定义深红色 */
+$bg-color-deepred: #a64a4a;
 
 .comui-btn {
     display: inline-block;
@@ -156,7 +160,10 @@ $b-color-dark-active: #1c2126;
 /* 自定义深灰色 */
 .comui-btn-dark{border: 1px solid $b-color-dark; color: $color-dark; background: $bg-color-dark; }
 .comui-btn-dark:hover,.comui-btn-dark.active{color: $color-dark-active; background-color: $bg-color-dark-active; border: 1px solid $b-color-dark-active;}
-
+/* 自定义灰色 */
+.comui-btn-gray{background-color: $bg-color-gray;}
+/* 自定义深红色 */
+.comui-btn-deepred{background-color: $bg-color-deepred;}
 
 /* 图标 */
 .comui-btn .comui-icon{margin-right: 3px; font-size: 18px; vertical-align: bottom; vertical-align: middle\0;}

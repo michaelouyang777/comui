@@ -32,9 +32,10 @@ $bd-color-gray: #e5e5e5;
 }
 .comui-card:last-child{margin-bottom: 0;}
 .comui-card-header{position: relative; height: 42px; line-height: 42px; padding: 0 15px; border-bottom: 1px solid #f6f6f6; color: #333; border-radius: 2px 2px 0 0; font-size: 16px;}
-.comui-card-body{position: relative; padding: 0px 15px; line-height: 24px;}
+.comui-card-body{position: relative; overflow: hidden; line-height: 24px;}
 .comui-card-body[pad15]{padding: 15px;}
 .comui-card-body[pad20]{padding: 20px;}
+.comui-card-body .comui-card-padding{padding: 0 15px; overflow: auto;}
 .comui-card-body .comui-table{margin: 5px 0;}
 .comui-card .comui-tab{margin: 0;}
 

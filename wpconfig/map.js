@@ -35,5 +35,9 @@ module.exports = {
 	'js/navbar': {
 		"src": ROOT + "./../src/components/navbar/navbar.js",
 		"tpl": "navbar.html"
+	},
+	'js/block': {
+		"src": ROOT + "./../src/components/block/block.js",
+		"tpl": "block.html"
 	}
 }

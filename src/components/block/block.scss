@@ -1,0 +1,42 @@
+
+.comui-block {
+    display: inline-block;
+    padding: 10px;
+    width: 148px;
+    color: #fff;
+    font-family: "微软雅黑";
+    background: #ccc;
+    text-align: center;
+    border-radius: 3px;
+}
+.comui-block+.comui-block {
+    margin-left: 10px;
+}
+.comui-block-num,
+.comui-block-txt{
+    display: block;
+}
+.comui-block-num{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.comui-block-txt{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+/* 风格 */
+.comui-block-red{
+    background: #e71106;
+}
+.comui-block-deepred{
+    background: #cf170e;
+}
+.comui-block-orange{
+    background: #f89800;
+}
+.comui-block-lightorange{
+    background: #fcb23f;
+}
