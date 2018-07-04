@@ -1,8 +1,14 @@
 /* 暗色调 */
 $bg-color-dark: #1a1d21;
 $bg-color-gloomy: #1e2428;
+$bd-color-gloomy: #1e2428;
 $color-blue: #057ed9;
 $color-white: #fff;
+/* 浅粉红色调 */
+$bg-color-gray: #f5f5f5;
+$bg-color-lightpink: #ffe3db;
+$bd-color-gray: #e5e5e5;
+
 /*
   面板
  */
@@ -71,6 +77,10 @@ $color-white: #fff;
 /* 暗色调 */
 .comui-bg-dark{background: $bg-color-dark !important;}
 .comui-bg-dark .comui-card{ background: $bg-color-gloomy}
-.comui-bg-dark .comui-card .comui-card-header{border-bottom: 1px solid $bg-color-gloomy; color:#fff; }
+.comui-bg-dark .comui-card .comui-card-header{border-bottom: 1px solid $bd-color-gloomy; color:#fff; }
 .comui-bg-dark .comui-card .comui-text-blue{color: $color-blue;}
 .comui-bg-dark .comui-card .comui-text-white{color: $color-white;}
+/* 浅粉红色调 */
+.comui-bg-lightpink{background: $bg-color-gray !important;}
+.comui-bg-lightpink .comui-card .comui-card-header{ font-weight: 700; border-bottom: 1px solid $bd-color-gray;}
+.comui-bg-lightpink .comui-card .comui-card-header-style{ background: $bg-color-lightpink; border-bottom: none;}
