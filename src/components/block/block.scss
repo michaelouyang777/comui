@@ -1,20 +1,39 @@
+/* 红色 */
+$bg-color-red: #e71106;
+/* 深红色 */
+$bg-color-deepred: #cf170e;
+/* 橙色 */
+$bg-color-orange: #f89800;
+/* 浅橙色 */
+$bg-color-lightorange: #fcb23f;
 
 .comui-block {
     display: inline-block;
     padding: 10px;
     width: 148px;
     color: #fff;
-    font-family: "微软雅黑";
+    white-space: nowrap;
+    font-family: "microsoft yahei";
     background: #ccc;
     text-align: center;
     border-radius: 3px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+/* 盒子之间的间距  */
 .comui-block+.comui-block {
     margin-left: 10px;
 }
+.comui-block-top,
+.comui-block-bottom{
+    font-size: 0;
+}
+
 .comui-block-num,
 .comui-block-txt{
-    display: block;
+    display: inline-block;
 }
 .comui-block-num{
     font-size: 20px;
@@ -27,16 +46,16 @@
     line-height: 20px;
 }
 
+/* 大小 */
+.comui-block-fullw{ width: 100%; }
+.comui-block-lg{ padding: 18px 14px; }
+.comui-block-m{ padding: 14px 14px 10px; }
+.comui-block-sm{ padding: 10px 10px 6px; }
+.comui-block-xs{ padding: 6px 10px 4px; }
+
 /* 风格 */
-.comui-block-red{
-    background: #e71106;
-}
-.comui-block-deepred{
-    background: #cf170e;
-}
-.comui-block-orange{
-    background: #f89800;
-}
-.comui-block-lightorange{
-    background: #fcb23f;
-}
+.comui-block-red{background: $bg-color-red;}
+.comui-block-deepred{background: $bg-color-deepred;}
+.comui-block-orange{background: $bg-color-orange;}
+.comui-block-lightorange{background: $bg-color-lightorange;}
+.comui-block-lightblue{ background: #18bae9; }
