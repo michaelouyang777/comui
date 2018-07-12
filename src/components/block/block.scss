@@ -6,6 +6,8 @@ $bg-color-deepred: #cf170e;
 $bg-color-orange: #f89800;
 /* 浅橙色 */
 $bg-color-lightorange: #fcb23f;
+/* 浅蓝色  */
+$bg-color-lightblue: #18bae9;
 
 .comui-block {
     display: inline-block;
@@ -42,7 +44,6 @@ $bg-color-lightorange: #fcb23f;
 }
 .comui-block-txt{
     font-size: 14px;
-    font-weight: 700;
     line-height: 20px;
 }
 
@@ -58,4 +59,5 @@ $bg-color-lightorange: #fcb23f;
 .comui-block-deepred{background: $bg-color-deepred;}
 .comui-block-orange{background: $bg-color-orange;}
 .comui-block-lightorange{background: $bg-color-lightorange;}
-.comui-block-lightblue{ background: #18bae9; }
+.comui-block-lightblue{ background: $bg-color-lightblue; }
+.comui-block-default{ background: none; border: 1px solid #e5e5e5; color: #333;}

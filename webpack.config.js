@@ -78,11 +78,11 @@ module.exports = {
 	            comments:false
 	        }
 	    }),
-		new CleanWebpackPlugin('dist/js/*.*', {
-		    root: __dirname,
-		    verbose: true,
-		    dry: false
-		}),
+//		new CleanWebpackPlugin('dist', {
+//		    root: __dirname,
+//		    verbose: true,
+//		    dry: false
+//		}),
 		new webpack.HotModuleReplacementPlugin(),
 		new ExtractTextPlugin("comui.css"),
 		new OptimizeCssAssetsPlugin({

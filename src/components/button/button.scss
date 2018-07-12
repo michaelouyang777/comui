@@ -56,7 +56,7 @@
 
 */
 /* 默认色 */
-$bg-color-default: #009688;
+$bg-color-default: #3e81f1;
 /* 百搭 */
 $bg-color-normal: #1E9FFF;
 /* 暖色 */
@@ -99,6 +99,10 @@ $b-color-dark-active: #1c2126;
 $bg-color-gray: #bfb1b1;
 /* 自定义深红色 */
 $bg-color-deepred: #a64a4a;
+/* 红色 */
+$bg-color-red: #df0400;
+/* 自定义灰绿 */
+$bg-color-graygreen: #52798b;
 
 .comui-btn {
     display: inline-block;
@@ -150,7 +154,6 @@ $bg-color-deepred: #a64a4a;
 /* 自定义亮蓝色中空 */
 .comui-btn-light-blue-empty{border: 1px solid $b-color-light-blue-empty; color: $color-light-blue-empty; background: $bg-color-light-blue-empty; }
 .comui-btn-light-blue-empty:hover,.comui-btn-light-blue-empty.active{color: $color-light-blue-empty-active; background-color: $bg-color-light-blue-empty-active; border: 1px solid $b-color-light-blue-empty-active;}
-
 /* 自定义灰白中空 */
 .comui-btn-gray-lightblue{border: 1px solid $b-color-gray-lightblue; color: $color-gray-lightblue; background: $bg-color-gray-lightblue; }
 .comui-btn-gray-lightblue:hover,.comui-btn-gray-lightblue.active{color: $color-gray-lightblue-active; background-color: $bg-color-gray-lightblue-active; border: 1px solid $b-color-gray-lightblue-active;}
@@ -160,10 +163,11 @@ $bg-color-deepred: #a64a4a;
 /* 自定义深灰色 */
 .comui-btn-dark{border: 1px solid $b-color-dark; color: $color-dark; background: $bg-color-dark; }
 .comui-btn-dark:hover,.comui-btn-dark.active{color: $color-dark-active; background-color: $bg-color-dark-active; border: 1px solid $b-color-dark-active;}
-/* 自定义灰色 */
-.comui-btn-gray{background-color: $bg-color-gray;}
 /* 自定义深红色 */
 .comui-btn-deepred{background-color: $bg-color-deepred;}
+.comui-btn-red{background-color: $bg-color-red;}
+/* 自定义灰绿 */
+.comui-btn-graygreen{background-color: $bg-color-graygreen;}
 
 /* 图标 */
 .comui-btn .comui-icon{margin-right: 3px; font-size: 18px; vertical-align: bottom; vertical-align: middle\0;}
@@ -184,13 +188,13 @@ $bg-color-deepred: #a64a4a;
 .comui-btn-lg{height: 44px; line-height: 44px; padding: 0 25px; font-size: 16px;}
 /* 小型 */
 .comui-btn-sm{height: 30px; line-height: 30px; padding: 0 10px; font-size: 12px;}
-.comui-btn-sm i{font-size: 16px !important;}
+.comui-btn-sm i{font-size: 14px;}
 /* 超小 */
 .comui-btn-xs{height: 22px; line-height: 22px; padding: 0 5px; font-size: 12px;}
-.comui-btn-xs i{font-size: 14px !important;}
+.comui-btn-xs i{font-size: 14px;}
 /* 一般大小 */
 .comui-btn-m{height: 28px; line-height: 28px; padding: 0 22px; font-size: 12px;}
-.comui-btn-m i{font-size: 16px !important;}
+.comui-btn-m i{font-size: 14px;}
 
 
 /* 按钮组 */
@@ -205,9 +209,11 @@ $bg-color-deepred: #a64a4a;
 .comui-btn-group .comui-btn-primary:hover{border-color: #C9C9C9; color: $bg-color-default;}
 .comui-btn-group .comui-btn-primary:first-child{border-left: 1px solid #c9c9c9;}
 /* 按钮组-自定义亮蓝色中空 */
-.comui-btn-group .comui-btn-gray-lightblue{border-left: none;}
-.comui-btn-group .comui-btn-gray-lightblue:hover{border-color: $b-color-gray-lightblue; color: $color-gray-lightblue-active;}
-.comui-btn-group .comui-btn-gray-lightblue:first-child{border-left: 1px solid $b-color-gray-lightblue;}
+.comui-btn-group .comui-btn-light-blue-empty{border-left: none;}
+.comui-btn-group .comui-btn-light-blue-empty:hover{border-color: $b-color-light-blue-empty; color: $color-light-blue-empty;}
+.comui-btn-group .comui-btn-light-blue-empty:first-child{border-left: 1px solid $b-color-light-blue-empty;}
 
 /* 流体 */
 .comui-btn-fluid{width: 100%;}
+
+
