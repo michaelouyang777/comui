@@ -24,10 +24,7 @@ $bg-color-lightblue: #18bae9;
     -webkit-user-select: none;
     -ms-user-select: none;
 }
-/* 盒子之间的间距  */
-.comui-block+.comui-block {
-    margin-left: 10px;
-}
+
 .comui-block-top,
 .comui-block-bottom{
     font-size: 0;
