@@ -9,5 +9,8 @@ import '../components/table/table.scss';
 import '../components/pannel/pannel.scss';
 import '../components/block/block.scss';
 import '../components/bootstrapbutton/bootstrapbutton.scss';
+import '../components/bootstrapbutton/morebutton.scss';
 import '../components/bootstrapinputgroup/bootstrapinputgroup.scss';
+import '../components/bootstrappanel/bootstrappanel.scss';
+import '../components/bootstrappanel/morepanel.scss';
 //import '../components/navbar/navbar.scss';

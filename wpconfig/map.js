@@ -32,6 +32,10 @@ module.exports = {
 		"src": ROOT + "./../src/components/bootstrapinputgroup/bootstrapinputgroup.js",
 		"tpl": "bootstrapinputgroup.html"
 	},
+	'js/bootstrappanel': {
+		"src": ROOT + "./../src/components/bootstrappanel/bootstrappanel.js",
+		"tpl": "bootstrappanel.html"
+	},
 	'js/navbar': {
 		"src": ROOT + "./../src/components/navbar/navbar.js",
 		"tpl": "navbar.html"

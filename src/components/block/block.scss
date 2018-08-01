@@ -58,3 +58,5 @@ $bg-color-lightblue: #18bae9;
 .comui-block-lightorange{background: $bg-color-lightorange;}
 .comui-block-lightblue{ background: $bg-color-lightblue; }
 .comui-block-default{ background: none; border: 1px solid #e5e5e5; color: #333;}
+.comui-block-empty{ background: none; color: #333;}
+.comui-block-shadow{ background: none; color: #333;-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1); box-shadow: 0 2px 3px 0 rgba(0, 0, 0, .1);}

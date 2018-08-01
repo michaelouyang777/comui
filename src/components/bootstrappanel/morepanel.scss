@@ -1,0 +1,51 @@
+/*
+ 新增部分
+ * */
+
+$color-light-blue:#324A5F;
+
+/* 自定义样式  */
+.panel-light-blue {
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+} 
+.panel-light-blue>.panel-heading {
+    color: $color-light-blue;
+    border-color: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    position:relative;
+}
+.panel-light-blue>.panel-heading+.panel-collapse>.panel-body {
+    border-top-color: transparent;
+}
+.panel-light-blue>.panel-heading .badge {
+    color: #f5f5f5;
+    background-color: $color-light-blue;
+}
+.panel-light-blue>.panel-footer{
+    background: none;
+    border-top: 1px solid transparent;
+}
+.panel-light-blue>.panel-footer+.panel-collapse>.panel-body {
+    border-bottom-color: transparent;
+}
+.panel-light-blue>.panel-heading:before {
+    content: '';
+    display: block;
+    width: 88px;
+    border-bottom: 2px solid #ddeaff;
+    position: absolute;
+    left: 14px;
+    bottom: 5px;
+}
+.panel-light-blue>.panel-heading:after {
+    content: '';
+    display: block;
+    width: 5px;
+    height: 5px;
+    background: #3E81f1;
+    position: absolute;
+    left: 109px;
+    bottom: 3px;
+}
