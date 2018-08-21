@@ -1,5 +1,5 @@
 import '../css/reset.scss';
-import '../css/fontawesome/css/font-awesome.css';
+import '../css/font-awesome/4.4.0/css/font-awesome.css';
 import '../css/style.scss';
 /* 组件样式 */
 import '../components/layout/layout.scss';
